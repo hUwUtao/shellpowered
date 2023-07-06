@@ -1,11 +1,14 @@
 #!/bin/sh
-
-read -r METHOD RPATH _
+source utils/std.sh
+read -r METHOD TRAIL _
 routf=${ROUTER:-"default_router.txt"}
 while IFS= read -r ent
 do
-  if [[ "$PATH" == $(utils/ech "$ent" | cut -d" " -f1) ]]; then
-    if ! ./${ent#* }; then
+  if [[ "$PATH" == $(ech "$ent" | cut -d" " -f1) ]]; then
+    echo "$TRAIL"
+    if ! `SHE="ROUTER" \
+      RPATH="$(ech "$TRAIL" | etch "?")" \
+      QUERY="$(ech "$TRAIL" | chte "?")" source ./${ent#* }`; then
       break
     fi
   fi
