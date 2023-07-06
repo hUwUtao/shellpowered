@@ -1,7 +1,8 @@
+source utils/std.sh
 function ditra {
   b=$(realpath "$1")
   if [[ "$b" == "$(realpath "$2")"* ]]; then 
-    ./ech "$b" 
+    ech "$b" 
   else 
     printf ""
   fi 

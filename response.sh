@@ -1,5 +1,6 @@
 #!/bin/sh
 source utils/std.sh
+source utils/http.sh
 buf=""
 bufl=0
 

@@ -5,10 +5,13 @@ routf=${ROUTER:-"default_router.txt"}
 while IFS= read -r ent
 do
   if [[ "$PATH" == $(ech "$ent" | cut -d" " -f1) ]]; then
-    echo "$TRAIL"
-    if ! `SHE="ROUTER" \
-      RPATH="$(ech "$TRAIL" | etch "?")" \
-      QUERY="$(ech "$TRAIL" | chte "?")" source ./${ent#* }`; then
+    SHE="ROUTER"
+    CMD="./${ent#* }"
+    RPATH="${TRAIL%*\?}" \
+    QUERY="${TRAIL##\?*}" \
+    source $CMD
+    if [ "$?" -eq "0" ]; then
+      echo ok
       break
     fi
   fi
