@@ -11,7 +11,7 @@ Server: ncsh
 Keep-Alive: timeout=5, max=1000
 Connection: Keep-Alive
 Content-Length: $(du "$fn" -b | cut -f1)
-Content-Type: $(./mime.sh "$(./ext.sh "$fn")")
+Content-Type: $(utils/mime.sh "$(utils/ext.sh "$fn")")
 
 EOF
 cat "$fn"
