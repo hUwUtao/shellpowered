@@ -1,1 +1,6 @@
 bin
+router.txt
+applets/*
+static/*
+!applets/.keep
+!static/.keep
