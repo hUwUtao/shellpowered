@@ -11,7 +11,6 @@ do
     QUERY="${TRAIL##\?*}" \
     source $CMD
     if [ "$?" -eq "0" ]; then
-      echo ok
       break
     fi
   fi
