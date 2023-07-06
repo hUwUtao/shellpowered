@@ -6,9 +6,9 @@ int main(int argc, char *argv[]) {
         return 1;
     char pit = argv[1][0];
     while ((c = getchar()) != EOF) {
-      putchar(c);
       if (c == pit)
         break;
+      putchar(c);
     }
     return 0;
 }
