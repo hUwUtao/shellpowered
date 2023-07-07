@@ -9,5 +9,5 @@ function extof {
 }
 
 function mime {
-  grep "$1" mime.txt | cut -d" " -f1 | head -n 1
+  grep "$(extof "$1")" mime.txt | cut -d" " -f1 | head -n 1
 }
