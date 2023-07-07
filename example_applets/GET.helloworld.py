@@ -1,3 +1,3 @@
 #!/usr/sbin/python
 
-print("Hello World from Python!!!")
+print("200\n\nHello World from Python!!!")

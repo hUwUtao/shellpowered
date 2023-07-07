@@ -1,2 +1,2 @@
 #!/usr/sbin/lua
-print("Hello World from Lua!!!")
+print("200\n\nHello World from Lua!!!")

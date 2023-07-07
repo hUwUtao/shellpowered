@@ -1,2 +1,2 @@
 #!/usr/sbin/node
-console.log("Hello World from NodeJS")
+console.log("200\n\nHello World from NodeJS")

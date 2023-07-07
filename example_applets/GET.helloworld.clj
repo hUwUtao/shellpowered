@@ -1,2 +1,2 @@
 #!/usr/sbin/clojure
-(println "Hello World from Clojure")
+(println "200\n\nHello World from Clojure")
