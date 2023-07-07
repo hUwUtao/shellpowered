@@ -37,6 +37,7 @@ audio/ogg oga
 audio/opus opus 
 audio/x-midi mid midi 
 font/otf otf 
+image/svg+xml svg
 image/avif avif
 image/bmp bmp
 image/gif gif
